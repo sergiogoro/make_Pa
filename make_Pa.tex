@@ -18,7 +18,10 @@
 % PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
+\title{make_Pa}
 \documentclass{fancyslides}
+
+\usepackage{graphicx, array, blindtext}
 
 \usepackage[utf8]{inputenc} % Allows the usage of non-english characters
 \usepackage{times} % Use the Times font
@@ -134,24 +137,6 @@ Llavors\\
 2 g. Llevat sec(x3 fresc)
 } %misc
 
-%\itemized{ 
-%\item 1/2 Kg. Farina\\
-%\item 325 g. H$_2$O
-%\item 2 g. Llevat sec (= 6g. llevat fresc)
-%\item 10 g. Sal
-%\item Llavors
-%} %itemized
-
-
-
-%\begin{enumerate}
-%\centering
-%\item Pa amb llevat
-%\item Massa madre
-%\item Pa de massa madre
-%\end{enumerate}
-
-
 \end{frame}
 
 
@@ -193,13 +178,143 @@ Empquetar(4) &  & Trenar & \\
 % Image slide
 %------------------------------------------------
 
-\fbckg{2.jpg} % Slide background image
+\fbckg{pa_fons}
 \begin{frame}
-\misc{ % Anything can be placed inside the \misc{} command
+
+\misc{
+
 Imatges de empaquetar
-\begin{figure}[h]
-\includegraphics[width=0.4\linewidth]{placeholder}
-\end{figure}
+	\begin{figure}[h]
+	\includegraphics[width=0.4\linewidth]{placeholder}
+	\end{figure}
+
+} %misc
+
+\end{frame}
+
+
+%------------------------------------------------
+% Image slide
+%------------------------------------------------
+
+\fbckg{pa_fons}
+\begin{frame}
+
+\misc{
+
+Imatges de crear
+    \begin{figure}[h]
+	\includegraphics[width=0.4\linewidth]{placeholder}
+	\end{figure}
+
+} %misc
+
+\end{frame}
+
+
+%------------------------------------------------
+% Image slide
+%------------------------------------------------
+
+\fbckg{blank}
+\begin{frame}
+
+\misc{
+
+BLANK
+	\begin{figure}[h]
+	\includegraphics[width=0.4\linewidth]{blank}
+	\end{figure}
+
+} %misc
+
+\end{frame}
+
+
+
+%------------------------------------------------
+% Table
+%------------------------------------------------
+
+\fbckg{pa_fons.jpg}
+\begin{frame}
+\misc{
+
+	Amassar:
+
+	\begin{table}[ht]
+	\centering
+	\begin{tabular}{*{2}{m{0.48\textwidth}}}
+		\hline
+    	Empaquetar:
+    	\begin{itemize}
+    		\item Estirar
+    		\item Plegar sobre si
+    	\end{itemize}
+    	Reposar 15\'\newline\newline
+    	Repetir x4
+    	&\begin{center}\rule{0.4\textwidth}{0.3\textwidth}\end{center}\\
+    
+    	\hline
+    
+    	Nevera & $12\approx24$ h. (Tapat amb film)\\
+    
+		\hline
+	\end{tabular}
+	\end{table}
+
+}
+\end{frame}
+
+
+%------------------------------------------------
+% Table
+%------------------------------------------------
+
+\fbckg{pa_fons.jpg}
+\begin{frame}
+\misc{
+
+	Crear y Fornejar:
+
+	\begin{table}[ht]
+	\centering
+	\begin{tabular}{*{2}{m{0.48\textwidth}}}
+		\hline
+        
+        \begin{center}\rule{0.4\textwidth}{0.3\textwidth}\end{center}
+        &
+        Crear:
+        \begin{itemize}
+        	\item Sentir
+        	\item Airear 1h. (opt)
+        	\item Estendre
+        	\item Tallar en 2
+        	\item Humitejar
+        	\item Sembrar
+        	\item Trenar
+        \end{itemize}
+        \\
+        
+        \hline
+        
+        Fornejar:
+        \begin{itemize}
+        	\item Preescalfar 250º C
+        	\item Introduir + $1/2$ got H$_2$O
+        	\item Apagar 10 min
+        	\item Engegar 200º C
+        	\item Fornejar $25\approx40$ min
+        \end{itemize}
+        \\
+        &
+        IMATGE\\
+		
+        \hline
+        
+	\end{tabular}
+	\end{table}
+
 }
 \end{frame}
 
@@ -208,42 +323,20 @@ Imatges de empaquetar
 % Image slide
 %------------------------------------------------
 
-\fbckg{2.jpg} % Slide background image
+\fbckg{blank}
 \begin{frame}
-\misc{ % Anything can be placed inside the \misc{} command
-Imatges de crear
-\begin{figure}[h]
-\includegraphics[width=0.4\linewidth]{placeholder}
-\end{figure}
-}
+
+\misc{
+
+BLANK
+	\begin{figure}[h]
+	\includegraphics[width=0.4\linewidth]{blank}
+	\end{figure}
+
+} %misc
+
 \end{frame}
 
-
-%------------------------------------------------
-% Enumerate
-%------------------------------------------------
-
-%\fbckg{pa_fons.jpg} % Slide background image
-%\begin{frame}
-%\misc{ % Anything can be placed inside the \misc{} command
-%\Large
-%\$ \texttt{make Pa --llevat -n 2 -t Bagguete}\\
-%Ingredients:
-%\itemized{ 
-%\item 1/2 Kg. Farina\\
-%\item 325 g. H$_2$O
-%\item 2 g. Llevat sec (= 6g. llevat fresc)
-%\item 10 g. Sal
-%\item Llavors
-%}
-%\begin{enumerate}
-%\centering
-%\item Pa amb llevat
-%\item Massa madre
-%\item Pa de massa madre
-%\end{enumerate}
-%} %misc
-%\end{frame}
 
 
 %------------------------------------------------
@@ -285,7 +378,7 @@ Imatges de crear
 % Resources
 %------------------------------------------------
 
-\fbckg{2.jpg} % Slide background image
+\fbckg{pa_fons} % Slide background image
 \begin{frame}
 \misc{ % Anything can be placed inside the \misc{} command
 Resources:
@@ -310,7 +403,7 @@ Trade-off
 \begin{table}[h]
 \begin{tabular}{l l l}
 \toprule
-\textbf{Pa amb \ldots} & \textbf{Llevat} & \textbf{Massa madre}\\
+\textbf{Pa amb:} & \textbf{Llevat} & \textbf{Massa madre}\\
 \midrule
 time & Rapid & Lento \\
 top & Senzill & Elaborat \\
@@ -320,7 +413,6 @@ stdout & Bonn\'issim & Suprem \\
 \end{table}
 }
 \end{frame}
-
 
 %----------------------------------------------------------------------------------------
 
