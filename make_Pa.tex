@@ -84,14 +84,14 @@
 % Itemized
 %------------------------------------------------
 
-\fbckg{2.jpg} % Slide background image
-\begin{frame}
-\itemized{ % This environment simply prints a series of bullet points
-\item Pa amb llevat
-\item Massa madre
-\item Pa de massa madre
-}
-\end{frame}
+%\fbckg{2.jpg} % Slide background image
+%\begin{frame}
+%\itemized{ % This environment simply prints a series of bullet points
+%\item Pa amb llevat
+%\item Massa madre
+%\item Pa de massa madre
+%}
+%\end{frame}
 
 %------------------------------------------------
 % \pitem
@@ -106,45 +106,51 @@
 % Enumerate
 %------------------------------------------------
 
-\fbckg{2.jpg} % Slide background image
+\fbckg{pa_fons.jpg} % Slide background image
 \begin{frame}
 \misc{ % Anything can be placed inside the \misc{} command
 \Huge
 \$ \texttt{apropos Pa}\\
-Pa amb llevat\\
-Massa madre\\
-Pa de massa madre\\
+\itemized{ 
+\item Pa amb llevat\\
+\item Massa amb massa mare natural
+}
 %\begin{enumerate}
 %\centering
 %\item Pa amb llevat
 %\item Massa madre
 %\item Pa de massa madre
 %\end{enumerate}
-}
+} %misc
 \end{frame}
 
+
 %------------------------------------------------
-% Table
+% Enumerate
 %------------------------------------------------
 
-\fbckg{2.jpg} % Slide background image
+\fbckg{pa_fons.jpg} % Slide background image
 \begin{frame}
 \misc{ % Anything can be placed inside the \misc{} command
-%Tables can be included with the \texttt{\textbackslash misc\{\}} command:
-Trade-off
-\begin{table}[h]
-\begin{tabular}{l l l}
-\toprule
-\textbf{Pa amb \ldots} & \textbf{Llevat} & \textbf{Massa madre}\\
-\midrule
-time & Rapid & Lento \\
-top & Senzill & +Elaborat \\
-stdout & Bonn\`isim & \textsc{m.b.h} \\
-\bottomrule
-\end{tabular}
-\end{table}
+\Large
+\$ \texttt{make Pa --llevat -n 2 -t Bagguete}\\
+Ingredients:
+\itemized{ 
+\item 1/2 Kg. Farina\\
+\item 325 g. H$_2$O
+\item 2 g. Llevat sec (= 6g. llevat fresc)
+\item 10 g. Sal
+\item Llavors
 }
+%\begin{enumerate}
+%\centering
+%\item Pa amb llevat
+%\item Massa madre
+%\item Pa de massa madre
+%\end{enumerate}
+} %misc
 \end{frame}
+
 
 %------------------------------------------------
 % Image slide
@@ -194,6 +200,29 @@ Resources:
 \end{figure}
 elforodelpan.com\\
 lamemoriadelpan.com
+}
+\end{frame}
+
+%------------------------------------------------
+% Table
+%------------------------------------------------
+
+\fbckg{pa_fons.jpg} % Slide background image
+\begin{frame}
+\misc{ % Anything can be placed inside the \misc{} command
+%Tables can be included with the \texttt{\textbackslash misc\{\}} command:
+Trade-off
+\begin{table}[h]
+\begin{tabular}{l l l}
+\toprule
+\textbf{Pa amb \ldots} & \textbf{Llevat} & \textbf{Massa madre}\\
+\midrule
+time & Rapid & Lento \\
+top & Senzill & +Elaborat \\
+stdout & Bonn\`isim & \textsc{m.b.h} \\
+\bottomrule
+\end{tabular}
+\end{table}
 }
 \end{frame}
 
