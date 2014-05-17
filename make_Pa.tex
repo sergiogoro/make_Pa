@@ -71,6 +71,7 @@
 \pointedsl{\$ Make Pa \ldots} % Text in this environment is printed in a circle and will be made large and uppercase - if you need to fit more text in you can reduce the font size within the \pointedsl{} bracket as usual, e.g. \pointedsl{\large smaller main point}
 \end{frame}
 
+
 %------------------------------------------------
 % Framed
 %------------------------------------------------
@@ -109,46 +110,97 @@
 \fbckg{pa_fons.jpg} % Slide background image
 \begin{frame}
 \misc{ % Anything can be placed inside the \misc{} command
-\Huge
+%\Huge
 \$ \texttt{apropos Pa}\\
-\itemized{ 
-\item Pa amb llevat\\
-\item Massa amb massa mare natural
-}
+%\itemized{ 
+%\item Pa amb llevat\\
+%\item Pa amb massa mare natural\\
+%}
+Pa amb llevat\\
+Pa amb massa mare natural\\
+} %misc
+
+%\ldots\\
+
+\misc{
+\$ \texttt{make Pa --llevat -n 2 -t Bagguete}\\
+\footnotesize
+Requires:\\
+\small
+$1/2$ Kg. Farina\\
+325 g. H$_2$O\\
+10 g. Sal\\
+Llavors\\
+2 g. Llevat sec(x3 fresc)
+} %misc
+
+%\itemized{ 
+%\item 1/2 Kg. Farina\\
+%\item 325 g. H$_2$O
+%\item 2 g. Llevat sec (= 6g. llevat fresc)
+%\item 10 g. Sal
+%\item Llavors
+%} %itemized
+
+
+
 %\begin{enumerate}
 %\centering
 %\item Pa amb llevat
 %\item Massa madre
 %\item Pa de massa madre
 %\end{enumerate}
-} %misc
+
+
 \end{frame}
 
 
 %------------------------------------------------
-% Enumerate
+% Table
 %------------------------------------------------
 
 \fbckg{pa_fons.jpg} % Slide background image
 \begin{frame}
 \misc{ % Anything can be placed inside the \misc{} command
-\Large
-\$ \texttt{make Pa --llevat -n 2 -t Bagguete}\\
-Ingredients:
-\itemized{ 
-\item 1/2 Kg. Farina\\
-\item 325 g. H$_2$O
-\item 2 g. Llevat sec (= 6g. llevat fresc)
-\item 10 g. Sal
-\item Llavors
+
+
+\$ \texttt{man Pa}\\
+
+\begin{table}[h]
+\begin{tabular}{l l l l}
+
+\toprule
+%\textbf{(1)Barrejar} & \textbf{(2)Amassar} & \textbf{(3)Nevera} & \textbf{(4)Fornejar}\\
+\textbf{(1)Amassar} & \textbf{(2)Nevera} & \textbf{(3)Crear} & \textbf{(4)Fornejar}\\
+\midrule
+
+Empaquetar & Nevera $12\approx24$ h. & Sentir & Preescalfar 250ºC\\
+Reposar 15\' &  & Airejar 1h. (opt) & Meter + $1/2$H$_2$O @ bandeja\\
+Empquetar(2) &  & Estendre & Apagar 10m\\
+Reposar 15\' &  & Tallar en 2 & Engegar 200º\\
+Empquetar(3) &  & Humitejar & Fornejar $25\approx40$m\\
+Reposar 15\' &  & Sembrar & \\
+Empquetar(4) &  & Trenar & \\
+
+
+\bottomrule
+\end{tabular}
+\end{table}
 }
-%\begin{enumerate}
-%\centering
-%\item Pa amb llevat
-%\item Massa madre
-%\item Pa de massa madre
-%\end{enumerate}
-} %misc
+\end{frame}
+
+%------------------------------------------------
+% Image slide
+%------------------------------------------------
+
+\fbckg{2.jpg} % Slide background image
+\begin{frame}
+\misc{ % Anything can be placed inside the \misc{} command
+Imatges de empaquetar
+\begin{figure}[h]
+\includegraphics[width=0.4\linewidth]{placeholder}
+\end{figure}
+}
 \end{frame}
 
 
@@ -159,12 +211,54 @@ Ingredients:
 \fbckg{2.jpg} % Slide background image
 \begin{frame}
 \misc{ % Anything can be placed inside the \misc{} command
-Figures can also be included with the \texttt{\textbackslash misc\{\}} command:
+Imatges de crear
 \begin{figure}[h]
 \includegraphics[width=0.4\linewidth]{placeholder}
 \end{figure}
 }
 \end{frame}
+
+
+%------------------------------------------------
+% Enumerate
+%------------------------------------------------
+
+%\fbckg{pa_fons.jpg} % Slide background image
+%\begin{frame}
+%\misc{ % Anything can be placed inside the \misc{} command
+%\Large
+%\$ \texttt{make Pa --llevat -n 2 -t Bagguete}\\
+%Ingredients:
+%\itemized{ 
+%\item 1/2 Kg. Farina\\
+%\item 325 g. H$_2$O
+%\item 2 g. Llevat sec (= 6g. llevat fresc)
+%\item 10 g. Sal
+%\item Llavors
+%}
+%\begin{enumerate}
+%\centering
+%\item Pa amb llevat
+%\item Massa madre
+%\item Pa de massa madre
+%\end{enumerate}
+%} %misc
+%\end{frame}
+
+
+%------------------------------------------------
+% Image slide
+%------------------------------------------------
+
+%\fbckg{2.jpg} % Slide background image
+%\begin{frame}
+%\misc{ % Anything can be placed inside the \misc{} command
+%Figures can also be included with the \texttt{\textbackslash misc\{\}} command:
+%\begin{figure}[h]
+%\includegraphics[width=0.4\linewidth]{placeholder}
+%\end{figure}
+%}
+%\end{frame}
 
 %------------------------------------------------
 % Thank you
@@ -179,13 +273,13 @@ Figures can also be included with the \texttt{\textbackslash misc\{\}} command:
 % Credits
 %------------------------------------------------
 
-\fbckg{blank} % A blank background can be used instead of an image
-\begin{frame}
-\sources{ % An environment for giving credit for slide backgrounds, images will need to be scaled down if there are more than two
-\includegraphics[scale=0.048]{1.jpg} \ flickr/lovelornpoets\\
-\includegraphics[scale=0.048]{1.jpg} \ youtube/ibanyarza\\
-}
-\end{frame}
+%\fbckg{blank} % A blank background can be used instead of an image
+%\begin{frame}
+%\sources{ % An environment for giving credit for slide backgrounds, images will need to be scaled down if there are more than two
+%\includegraphics[scale=0.048]{1.jpg} \ flickr/lovelornpoets\\
+%\includegraphics[scale=0.048]{1.jpg} \ youtube/ibanyarza\\
+%}
+%\end{frame}
 
 %------------------------------------------------
 % Resources
@@ -199,7 +293,8 @@ Resources:
 \includegraphics[width=0.4\linewidth]{Iban_pancasero}
 \end{figure}
 elforodelpan.com\\
-lamemoriadelpan.com
+lamemoriadelpan.com\\
+tequedasacenar.com\\
 }
 \end{frame}
 
@@ -218,8 +313,8 @@ Trade-off
 \textbf{Pa amb \ldots} & \textbf{Llevat} & \textbf{Massa madre}\\
 \midrule
 time & Rapid & Lento \\
-top & Senzill & +Elaborat \\
-stdout & Bonn\`isim & \textsc{m.b.h} \\
+top & Senzill & Elaborat \\
+stdout & Bonn\'issim & Suprem \\
 \bottomrule
 \end{tabular}
 \end{table}
