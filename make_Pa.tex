@@ -69,183 +69,59 @@
 % Pointed
 %------------------------------------------------
 
-\fbckg{1.jpg} % Slide background image
+\fbckg{Picasso_Cadaques}
 \begin{frame}
-\pointedsl{\$ Make Pa \ldots} % Text in this environment is printed in a circle and will be made large and uppercase - if you need to fit more text in you can reduce the font size within the \pointedsl{} bracket as usual, e.g. \pointedsl{\large smaller main point}
-\end{frame}
+\pointedsl{\$ Make Pa} % Text in this environment is printed in a circle and will be made large and uppercase - if you need to fit more text in you can reduce the font size within the \pointedsl{} bracket as usual, e.g. \pointedsl{\large smaller main point}
+\Huge \end{frame}
 
 
 %------------------------------------------------
-% Framed
+% Enumerate ways of making Pa
 %------------------------------------------------
 
-%\fbckg{2.jpg} % Slide background image
-%\begin{frame}
-%\framedsl{Qu\`e es el Pa?} % Text in this environment will be made large, uppercase and will wrap multiple lines
-%\end{frame}
-
-%------------------------------------------------
-% Itemized
-%------------------------------------------------
-
-%\fbckg{2.jpg} % Slide background image
-%\begin{frame}
-%\itemized{ % This environment simply prints a series of bullet points
-%\item Pa amb llevat
-%\item Massa madre
-%\item Pa de massa madre
-%}
-%\end{frame}
-
-%------------------------------------------------
-% \pitem
-%------------------------------------------------
-
-%\fbckg{2.jpg} % Slide background image
-%\begin{frame}
-%\framedsl{\pitem{Massa madre} \pitem{Pa amb massa madre} \fitem{Pa amb llevat ¿quimic?}} % Text in \pitem commands will be printed one after another on separate slides until all are displayed
-%\end{frame}
-
-%------------------------------------------------
-% Enumerate
-%------------------------------------------------
-
-\fbckg{pa_fons.jpg} % Slide background image
+\fbckg{pa_fons.jpg}
 \begin{frame}
-\misc{ % Anything can be placed inside the \misc{} command
-%\Huge
-\$ \texttt{apropos Pa}\\
-%\itemized{ 
-%\item Pa amb llevat\\
-%\item Pa amb massa mare natural\\
-%}
-Pa amb llevat\\
-Pa amb massa mare natural\\
-} %misc
-
-%\ldots\\
-
 \misc{
-\$ \texttt{make Pa --llevat -n 2 -t Bagguete}\\
-\footnotesize
-Requires:\\
-\small
-$1/2$ Kg. Farina\\
-325 g. H$_2$O\\
-10 g. Sal\\
-Llavors\\
-2 g. Llevat sec(x3 fresc)
+	\Large
+	\$ \texttt{apropos Pa}\\
+	
+    \normalsize
+	Pa amb llevat\\
+	Pa amb massa mare natural\\
+~\\
+
+	\Large
+	\$ \texttt{make Pa --llevat -n 2 -t Bagguete}\\
+	\normalsize
+	Requires:
+%   \normalsize
+    \begin{description}
+		\item[Farina]	$1/2$ Kg.
+        \item[H$_2$O]	325 g.
+		\item[Sal]	10g.
+        \item[Llevat]	2g. sec (x3 fresc)
+        \item[Llavors]
+    \end{description}
 } %misc
 
 \end{frame}
 
 
 %------------------------------------------------
-% Table
-%------------------------------------------------
-
-\fbckg{pa_fons.jpg} % Slide background image
-\begin{frame}
-\misc{ % Anything can be placed inside the \misc{} command
-
-
-\$ \texttt{man Pa}\\
-
-\begin{table}[h]
-\begin{tabular}{l l l l}
-
-\toprule
-%\textbf{(1)Barrejar} & \textbf{(2)Amassar} & \textbf{(3)Nevera} & \textbf{(4)Fornejar}\\
-\textbf{(1)Amassar} & \textbf{(2)Nevera} & \textbf{(3)Crear} & \textbf{(4)Fornejar}\\
-\midrule
-
-Empaquetar & Nevera $12\approx24$ h. & Sentir & Preescalfar 250ºC\\
-Reposar 15\' &  & Airejar 1h. (opt) & Meter + $1/2$H$_2$O @ bandeja\\
-Empquetar(2) &  & Estendre & Apagar 10m\\
-Reposar 15\' &  & Tallar en 2 & Engegar 200º\\
-Empquetar(3) &  & Humitejar & Fornejar $25\approx40$m\\
-Reposar 15\' &  & Sembrar & \\
-Empquetar(4) &  & Trenar & \\
-
-
-\bottomrule
-\end{tabular}
-\end{table}
-}
-\end{frame}
-
-%------------------------------------------------
-% Image slide
-%------------------------------------------------
-
-\fbckg{pa_fons}
-\begin{frame}
-
-\misc{
-
-Imatges de empaquetar
-	\begin{figure}[h]
-	\includegraphics[width=0.4\linewidth]{placeholder}
-	\end{figure}
-
-} %misc
-
-\end{frame}
-
-
-%------------------------------------------------
-% Image slide
-%------------------------------------------------
-
-\fbckg{pa_fons}
-\begin{frame}
-
-\misc{
-
-Imatges de crear
-    \begin{figure}[h]
-	\includegraphics[width=0.4\linewidth]{placeholder}
-	\end{figure}
-
-} %misc
-
-\end{frame}
-
-
-%------------------------------------------------
-% Image slide
-%------------------------------------------------
-
-\fbckg{blank}
-\begin{frame}
-
-\misc{
-
-BLANK
-	\begin{figure}[h]
-	\includegraphics[width=0.4\linewidth]{blank}
-	\end{figure}
-
-} %misc
-
-\end{frame}
-
-
-
-%------------------------------------------------
-% Table
+% Table Amassar
 %------------------------------------------------
 
 \fbckg{pa_fons.jpg}
 \begin{frame}
 \misc{
 
-	Amassar:
-
+	\Huge Amassar: \normalsize
+    
 	\begin{table}[ht]
 	\centering
 	\begin{tabular}{*{2}{m{0.48\textwidth}}}
-		\hline
+    	\hline
+
     	Empaquetar:
     	\begin{itemize}
     		\item Estirar
@@ -253,13 +129,28 @@ BLANK
     	\end{itemize}
     	Reposar 15\'\newline\newline
     	Repetir x4
-    	&\begin{center}\rule{0.4\textwidth}{0.3\textwidth}\end{center}\\
+        
+    	&
+        
+        \begin{center}
+        \begin{figure}[h]
+			\includegraphics[width=0.5\linewidth]{estirar_massa}
+            \includegraphics[width=0.5\linewidth]{plegar_massa}
+		\end{figure}
+        \end{center}\\
     
     	\hline
-    
-    	Nevera & $12\approx24$ h. (Tapat amb film)\\
-    
-		\hline
+
+        
+        \\Nevera
+        
+        &
+        
+        
+        12$\approx$24 h.\\
+        
+        \hline
+        
 	\end{tabular}
 	\end{table}
 
@@ -268,25 +159,30 @@ BLANK
 
 
 %------------------------------------------------
-% Table
+% Table Crear
 %------------------------------------------------
 
 \fbckg{pa_fons.jpg}
 \begin{frame}
 \misc{
 
-	Crear y Fornejar:
+	\Huge Crear: \normalsize
 
 	\begin{table}[ht]
 	\centering
 	\begin{tabular}{*{2}{m{0.48\textwidth}}}
-		\hline
+    	\hline
         
-        \begin{center}\rule{0.4\textwidth}{0.3\textwidth}\end{center}
+        \begin{center}
+        \begin{figure}[h]
+			\includegraphics[width=1\linewidth]{crear}
+		\end{figure}        
+        \end{center}
+        
         &
-        Crear:
+       
         \begin{itemize}
-        	\item Sentir
+        	\item Palpar
         	\item Airear 1h. (opt)
         	\item Estendre
         	\item Tallar en 2
@@ -295,21 +191,49 @@ BLANK
         	\item Trenar
         \end{itemize}
         \\
-        
+		
         \hline
         
-        Fornejar:
+	\end{tabular}
+	\end{table}
+
+} %misc
+\end{frame}
+
+
+
+%------------------------------------------------
+% Table Fornejar
+%------------------------------------------------
+
+\fbckg{pa_fons.jpg}
+\begin{frame}
+\misc{
+
+	\Huge Fornejar: \normalsize
+
+	\begin{table}[ht]
+	\centering
+	\begin{tabular}{*{2}{m{0.48\textwidth}}}
+		\hline
+        
         \begin{itemize}
         	\item Preescalfar 250º C
         	\item Introduir + $1/2$ got H$_2$O
         	\item Apagar 10 min
         	\item Engegar 200º C
-        	\item Fornejar $25\approx40$ min
+        	\item Fornejar 25$\approx$40 min.
         \end{itemize}
-        \\
+        
         &
-        IMATGE\\
-		
+        
+        \begin{center}
+        \begin{figure}[h]
+			\includegraphics[width=1\linewidth]{fornejar}
+		\end{figure}
+        \end{center}
+    	\\
+        
         \hline
         
 	\end{tabular}
@@ -320,84 +244,43 @@ BLANK
 
 
 %------------------------------------------------
-% Image slide
+% Resources
 %------------------------------------------------
 
-\fbckg{blank}
+\fbckg{pa_fons}
 \begin{frame}
-
 \misc{
+Resources:
+\begin{figure}[h]
+\includegraphics[width=0.4\linewidth]{Iban_pancasero}
+\includegraphics[width=0.52\linewidth]{LasRecetasDeMJ}
+\end{figure}
+Recepta: http://goo.gl/aFyLZS (Ib\'an Yarza \& Las Recetas de MJ)\\
+elforodelpan.com\\
+lamemoriadelpan.com\\
+tequedasacenar.com\\
 
-BLANK
-	\begin{figure}[h]
-	\includegraphics[width=0.4\linewidth]{blank}
-	\end{figure}
-
-} %misc
-
+}
 \end{frame}
-
-
-
-%------------------------------------------------
-% Image slide
-%------------------------------------------------
-
-%\fbckg{2.jpg} % Slide background image
-%\begin{frame}
-%\misc{ % Anything can be placed inside the \misc{} command
-%Figures can also be included with the \texttt{\textbackslash misc\{\}} command:
-%\begin{figure}[h]
-%\includegraphics[width=0.4\linewidth]{placeholder}
-%\end{figure}
-%}
-%\end{frame}
 
 %------------------------------------------------
 % Thank you
 %------------------------------------------------
 
-\fbckg{mans_a_la_massa.jpg} % Slide background image
+\fbckg{mans_a_la_massa.jpg}
 \begin{frame}
 \thankyou % Inserts a thank you slide
 \end{frame}
 
-%------------------------------------------------
-% Credits
-%------------------------------------------------
 
-%\fbckg{blank} % A blank background can be used instead of an image
-%\begin{frame}
-%\sources{ % An environment for giving credit for slide backgrounds, images will need to be scaled down if there are more than two
-%\includegraphics[scale=0.048]{1.jpg} \ flickr/lovelornpoets\\
-%\includegraphics[scale=0.048]{1.jpg} \ youtube/ibanyarza\\
-%}
-%\end{frame}
-
-%------------------------------------------------
-% Resources
-%------------------------------------------------
-
-\fbckg{pa_fons} % Slide background image
-\begin{frame}
-\misc{ % Anything can be placed inside the \misc{} command
-Resources:
-\begin{figure}[h]
-\includegraphics[width=0.4\linewidth]{Iban_pancasero}
-\end{figure}
-elforodelpan.com\\
-lamemoriadelpan.com\\
-tequedasacenar.com\\
-}
-\end{frame}
 
 %------------------------------------------------
 % Table
 %------------------------------------------------
 
-\fbckg{pa_fons.jpg} % Slide background image
+\fbckg{pa_fons.jpg}
 \begin{frame}
-\misc{ % Anything can be placed inside the \misc{} command
+\misc{
 %Tables can be included with the \texttt{\textbackslash misc\{\}} command:
 Trade-off
 \begin{table}[h]
@@ -413,6 +296,42 @@ stdout & Bonn\'issim & Suprem \\
 \end{table}
 }
 \end{frame}
+
+%------------------------------------------------
+% Table
+%------------------------------------------------
+
+\fbckg{pa_fons.jpg}
+\begin{frame}
+\misc{
+
+
+\$ \texttt{man Pa}\\
+
+\begin{table}[h]
+\begin{tabular}{l l l l}
+
+	\toprule
+
+	\textbf{(1)Amassar} & \textbf{(2)Nevera} & \textbf{(3)Crear} & \textbf{(4)Fornejar}\\
+
+	\midrule
+
+	Empaquetar & Nevera $12\approx24$ h. & Sentir & Preescalfar 250ºC\\
+	Reposar 15\' &  & Airejar 1h. (opt) & Meter + $1/2$H$_2$O @ bandeja\\
+	Empquetar(2) &  & Estendre & Apagar 10m\\
+	Reposar 15\' &  & Tallar en 2 & Engegar 200º\\
+	Empquetar(3) &  & Humitejar & Fornejar $25\approx40$m\\
+	Reposar 15\' &  & Sembrar & \\
+	Empquetar(4) &  & Trenar & \\
+
+
+	\bottomrule
+\end{tabular}
+\end{table}
+}
+\end{frame}
+
 
 %----------------------------------------------------------------------------------------
 
